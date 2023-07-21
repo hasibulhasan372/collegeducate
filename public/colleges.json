@@ -1,0 +1,85 @@
+[
+    {
+        "name": "Princeton University",
+        "admissionDate":"7-22-2023 to 8-22-2023",
+        "events": [
+            {
+                "name": "Demo Day- Robertson",
+                "topic": "ENTREPRENEURSHIP",
+                "details": "Demo Day is the culmination summer event for the Keller Center’s eLab Accelerator Program. Students showcase their entrepreneurial ventures to an audience of investors, innovators, faculty, and entrepreneurs in two locations, Princeton and New York City.",
+                "location": "Robertson Hall / 100A Dodds Atrium / Dodds Auditorium 100",
+                "time": "2:30 p.m.",
+                "date": "July 31,2023"
+            },
+            {
+                "name": "Sunday Summer ORL Service",
+                "topic": "SERVICE",
+                "details": "Office of Religious Life Sunday Service",
+                "location": "Chapel / All Chapel Spaces / Chancel",
+                "time": "10:00 a.m.",
+                "date": "July 23, 2023"
+            },
+            {
+                "name": "30 Minutes Towards Better Bibliographies and Footnotes! (online)",
+                "topic": "COMMUNITY, WORKSHOPS",
+                "details": "This 30-minute workshop will focus on Zotero, but will also briefly introduce you to other similar tools, including Mendeley and Endnote. We will cover setting up an account, importing citations from library databases and web pages, and deploying the references into a Word document. Please watch this six-minute video before the workshop: https://vimeo.com/369873151",
+                "location": "Online",
+                "time": "11:00 a.m.",
+                "date": "July 24, 2023"
+            }
+
+        ],
+        "research": "",
+        "img": "",
+        "sports": "",
+        "about": "Princeton University is a private institution that was founded in 1746. It has a total undergraduate enrollment of 5,321 (fall 2021), its setting is suburban, and the campus size is 600 acres. It utilizes a semester-based academic calendar. Princeton University's ranking in the 2022-2023 edition of Best Colleges is National Universities, #1. Its tuition and fees are $57,410.",
+        "admission_process": {
+            "SAT Range": "1460 - 1570",
+            "ACT Range":"33-35",
+            "gpa": "3.9",
+            "admission_fee": 57410,
+            "room_board": 18630,
+            "link": "https://www.princeton.edu/admission-aid" 
+        }
+    },
+    {
+        "name": "",
+        "admissionDate":"",
+        "events": "",
+        "research": "",
+        "img": "",
+        "sports": ""
+    },
+    {
+        "name": "",
+        "admissionDates":"",
+        "events": "",
+        "research": "",
+        "img": "",
+        "sports": ""
+    },
+    {
+        "name": "",
+        "admissionDates":"",
+        "events": "",
+        "research": "",
+        "img": "",
+        "sports": ""
+    },
+    {
+        "name": "",
+        "admissionDates":"",
+        "events": "",
+        "research": "",
+        "img": "",
+        "sports": ""
+    },
+    {
+        "name": "",
+        "admissionDates":"",
+        "events": "",
+        "research": "",
+        "img": "",
+        "sports": ""
+    }
+]
