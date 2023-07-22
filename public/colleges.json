@@ -2,6 +2,7 @@
     {
         "name": "Princeton University",
         "admissionDate": "7-22-2023 to 8-22-2023",
+        "published_paper": 678,
         "events": [
             {
                 "name": "Demo Day- Robertson",
@@ -49,11 +50,8 @@
                 "link": "https://mae.princeton.edu/about-mae/news/facial-recognition-atoms-image-distinguishes-elements-electron-orbitals"
             }
         ],
-        "img": [
-            "https://i.ibb.co/M6C3BsD/Princeton.jpg",
-            "https://i.ibb.co/SyXNr78/Princeton-2.jpg",
-            "https://i.ibb.co/ggjpxdT/Princeton-3.jpg"
-        ],
+        "img": "https://i.ibb.co/M6C3BsD/Princeton.jpg",
+        "banner": "https://i.ibb.co/VTr8H5P/princeton-ban.png",
         "sports": [
             {
                 "game": "Basketball",
@@ -82,6 +80,7 @@
     {
         "name": "Harvard University",
         "admissionDate": "8-15-2023 to 9-18-2023",
+        "published_paper": 459,
         "events": [
             {
                 "name": "Exhibition Tour: American Watercolors, 1880–1990: Into the Light",
@@ -128,11 +127,8 @@
                 "link": "https://www.hbs.edu/faculty/Pages/item.aspx?num=64123"
             }
         ],
-        "img": [
-            "https://i.ibb.co/D49s9z6/harvard.jpg",
-            "https://i.ibb.co/1MxcQS3/harvard-2.jpg",
-            "https://i.ibb.co/wQnCj3H/harvard-3.jpg"
-        ],
+        "img": "https://i.ibb.co/D49s9z6/harvard.jpg",
+        "banner": "https://i.ibb.co/q7cgvd0/harvard-ban.png",
         "sports": [
             {
                 "game": "Basketball",

@@ -6,3 +6,6 @@
 .my-con{
     @apply max-w-[1170px] mx-auto;
 }
+.admission_table{
+    @apply mt-4 lg:w-1/2 flex justify-between border-b pb-3 border-slate-300;
+}
