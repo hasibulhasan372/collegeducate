@@ -6,6 +6,7 @@ import Home from "../pages/Home/Home/Home";
 import Colleges from "../pages/Colleges/Colleges/Colleges";
 import Login from "../pages/Register/Login";
 import SignUp from "../pages/Register/SignUp";
+import Admission from "../pages/Admission/Admission";
 
   const router = createBrowserRouter([
     {
@@ -28,6 +29,11 @@ import SignUp from "../pages/Register/SignUp";
         {
           path: "signUp",
           element: <SignUp></SignUp>
+        },
+        {
+          path: "admission",
+          element: <Admission></Admission>
+
         }
       ]
     },
