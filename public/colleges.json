@@ -28,8 +28,32 @@
                 "date": "July 24, 2023"
             }
         ],
-        "research": "",
-        "img": "",
+        "research": [
+            {
+                "researcher": [
+                    "Sujit S. Datta"
+                ],
+                "topic": "Soft matter expert Sujit Datta has been promoted to associate professor of chemical and biological engineering, effective July 1, 2023.",
+                "details": "Datta joined the department as an assistant professor in 2017. Since then, he has established himself as a leading researcher in the study of how soft materials — everything from synthetic fluids to living cells — interact with and move through complex real-world environments. He has also made an indelible mark as a teacher, mentoring star graduate students, introducing undergraduates to advanced topics, and inspiring high school students in summer programs.",
+                "publish_date": "June 29, 2023",
+                "link": "https://cbe.princeton.edu/news/soft-matter-expert-sujit-datta-promoted-associate-professor"
+            },
+            {
+                "researcher": [
+                    "Craig Arnold",
+                    "Emily A. Carter"
+                ],
+                "topic": "Like facial recognition for atoms, image distinguishes elements by electron orbitals",
+                "details": "Orchestrating an array of advanced microscopes, researchers at Princeton and the University of Texas have created images of molecules with such clarity that it is possible to distinguish iron from cobalt by the orbital shapes of electrons buzzing around them.Chemists have long used abstract shapes to describe electron orbitals in theory, which are crucial to how atoms and molecules behave. However, this groundbreaking study marks the first direct observation of these orbital shapes, rather than inferring them based on chemical reactions.",
+                "publish_date": "07/14/23",
+                "link": "https://mae.princeton.edu/about-mae/news/facial-recognition-atoms-image-distinguishes-elements-electron-orbitals"
+            }
+        ],
+        "img": [
+            "https://i.ibb.co/M6C3BsD/Princeton.jpg",
+            "https://i.ibb.co/SyXNr78/Princeton-2.jpg",
+            "https://i.ibb.co/ggjpxdT/Princeton-3.jpg"
+        ],
         "sports": [
             {
                 "game": "Basketball",
@@ -52,46 +76,86 @@
             "admission_fee": 57410,
             "room_board": 18630,
             "link": "https://www.princeton.edu/admission-aid"
-        }
+        },
+        "rating": 4.9
     },
     {
-        "name": "",
-        "admissionDate": "",
-        "events": "",
-        "research": "",
-        "img": "",
-        "sports": ""
-    },
-    {
-        "name": "",
-        "admissionDates": "",
-        "events": "",
-        "research": "",
-        "img": "",
-        "sports": ""
-    },
-    {
-        "name": "",
-        "admissionDates": "",
-        "events": "",
-        "research": "",
-        "img": "",
-        "sports": ""
-    },
-    {
-        "name": "",
-        "admissionDates": "",
-        "events": "",
-        "research": "",
-        "img": "",
-        "sports": ""
-    },
-    {
-        "name": "",
-        "admissionDates": "",
-        "events": "",
-        "research": "",
-        "img": "",
-        "sports": ""
+        "name": "Harvard University",
+        "admissionDate": "8-15-2023 to 9-18-2023",
+        "events": [
+            {
+                "name": "Exhibition Tour: American Watercolors, 1880–1990: Into the Light",
+                "topic": "ARTS",
+                "details": "Join curator Joachim Homann for an in-depth discussion about works in the exhibition American Watercolors, 1880–1990: Into the Light, on view from May 20 to August 13, 2023. Homann will share insights about the making of the exhibition, which seeks to inspire conversations and enrich today’s practitioners of watercolor.",
+                "location": "Harvard Art Museums 32 Quincy Street, Cambridge, MA",
+                "time": "12:00pm",
+                "date": "July 23, 2023"
+            },
+            {
+                "name": "FARMERS' MARKET AT HARVARD",
+                "topic": "AGRICULTURE",
+                "details": "The Market was founded in 2005, and operates on The Plaza outside Harvard’s Science Center (near the corner of Oxford and Kirkland Streets). The Farmers’ Market at Harvard accepts SNAP, Women, Infant & Children (WIC) coupons, and Senior Farmers’ Market Nutrition Program (SFMNP) coupons. The Harvard Farmer's Market also doubles the value of EBT purchases up to $15 per week.",
+                "location": "Harvard's Science Center Plaza",
+                "time": "11:30am",
+                "date": "July 25, 2023"
+            },
+            {
+                "name": "30 Minutes Towards Better Bibliographies and Footnotes! (online)",
+                "topic": "COMMUNITY, WORKSHOPS",
+                "details": "This 30-minute workshop will focus on Zotero, but will also briefly introduce you to other similar tools, including Mendeley and Endnote. We will cover setting up an account, importing citations from library databases and web pages, and deploying the references into a Word document. Please watch this six-minute video before the workshop: https://vimeo.com/369873151",
+                "location": "Online",
+                "time": "11:00 a.m.",
+                "date": "July 24, 2023"
+            }
+        ],
+        "research": [
+            {
+                "researcher": [
+                    "Prithwiraj Choudhury"
+                ],
+                "topic": "Top Talent, Elite Colleges, and Migration: Evidence from the Indian Institutes of Technology",
+                "details": "We study migration in the right tail of the talent distribution using a novel dataset of Indian high school students taking the Joint Entrance Exam (JEE), a college entrance exam used for admission to the prestigious Indian Institutes of Technology (IIT). We find a high incidence of migration after students complete college: among the top 1,000 scorers on the exam, 36% have migrated abroad, rising to 62% for the top 100 scorers. We next document that students who attended the original Top 5 Indian Institutes of Technology (IIT) were 5 percentage points more likely to migrate for graduate school compared to equally talented students who studied in other institutions. We explore two mechanisms for these patterns: signaling, for which we study migration after one university suddenly gained the IIT designation; and alumni networks, using information on the location of IIT alumni in U.S. computer science departments.",
+                "publish_date": "SEPTEMBER 2023",
+                "link": "https://www.hbs.edu/faculty/Pages/item.aspx?num=64080"
+            },
+            {
+                "researcher": [
+                    "Kristin E. Fabbe"
+                ],
+                "topic": "Surveying the Landscape of Labor Market Threat Perceptions from Migration: Evidence from Attitudes toward Sub-Saharan African Migrants in Morocco",
+                "details": "Morocco, once primarily known as a country of emigration and transit to Europe, has become a destination country for migrants, the majority of whom are from sub-Saharan Africa. Using an original nationally representative survey of 2,700 respondents, together with data from two census waves and one migrant regularization wave, the authors examine Moroccan citizens’ labor market threat perceptions from this new migrant group. Consistent with findings from studies conducted in developed countries, less educated, poorer respondents express higher labor market threat perceptions. The authors also find evidence, however, that city dwellers and employed female Moroccans are the most likely to report threat perceptions, even after controlling for greater “exposure” to migrants. The article contributes to literatures on migration exposure and how rural–urban dynamics shape labor market threat perceptions in a developing country.",
+                "publish_date": "AUGUST 2023",
+                "link": "https://www.hbs.edu/faculty/Pages/item.aspx?num=64123"
+            }
+        ],
+        "img": [
+            "https://i.ibb.co/D49s9z6/harvard.jpg",
+            "https://i.ibb.co/1MxcQS3/harvard-2.jpg",
+            "https://i.ibb.co/wQnCj3H/harvard-3.jpg"
+        ],
+        "sports": [
+            {
+                "game": "Basketball",
+                "news": "In a 94-90 win over the Toronto Raptors on July 12, Evbuomwan finished with six points on 2-for-3 shooting from the field, two rebounds and one block. He backed that performance up with nine points on 3-for-6 shooting from the field and 1-for-1 shooting from three along with two rebounds, two assists and two seals on July 14 in a victory over the San Antonio Spurs. In the Pistons final Summer League contest, a 100-85 triumph over the Indiana Pacers on July 16, Evbuomwan had six points, eight rebounds, two assists and one block."
+            },
+            {
+                "game": "Baseball",
+                "news": "For many, many years Rick wrote a Sunday baseball column, and the name of it was Diamond Reflections. TigerBlog is borrowing that today as he writes about three separate baseball-related subjects, two of which relate to Princeton: Do you know how many active Major League Baseball players have at least 2,000 career hits?  The answer is not a lot. Actually, it's six. That's it.The idea that a pitcher will reach 300 wins in these days of pitch counts and limited innings is pretty much out the window. If anything, a relief pitcher has as good a chance of getting to 300 wins as a starter, and maybe even better. But 3,000 hits? Maybe it's because of how many at-bats now end in either home runs or strikeouts, but players don't seem to be piling up the number of hits that they used to."
+            },
+            {
+                "game": " Ice Hockey",
+                "news": "Konovalov, a forward and an economics major who will begin his junior year in the fall, competed in seven games last season and had a helper at Harvard during the second game of the ECAC Hockey quarterfinal series. Marciano, a rising sophomore blueliner, played in 28 games and scored his first career goal in a 6-5 win over RPI last December before getting an assist in the return trip to Troy in February."
+            }
+        ],
+        "about": "Princeton University is a private institution that was founded in 1746. It has a total undergraduate enrollment of 5,321 (fall 2021), its setting is suburban, and the campus size is 600 acres. It utilizes a semester-based academic calendar. Princeton University's ranking in the 2022-2023 edition of Best Colleges is National Universities, #1. Its tuition and fees are $57,410.",
+        "admission_process": {
+            "sat": "1460 - 1570",
+            "act": "33 - 35",
+            "gpa": "3.9",
+            "admission_fee": 57410,
+            "room_board": 18630,
+            "link": "https://www.princeton.edu/admission-aid"
+        },
+        "rating": 4.7
     }
 ]
