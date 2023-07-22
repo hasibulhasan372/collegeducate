@@ -1,7 +1,7 @@
 [
     {
         "name": "Princeton University",
-        "admissionDate":"7-22-2023 to 8-22-2023",
+        "admissionDate": "7-22-2023 to 8-22-2023",
         "events": [
             {
                 "name": "Demo Day- Robertson",
@@ -27,24 +27,36 @@
                 "time": "11:00 a.m.",
                 "date": "July 24, 2023"
             }
-
         ],
         "research": "",
         "img": "",
-        "sports": "",
+        "sports": [
+            {
+                "game": "Basketball",
+                "news": "In a 94-90 win over the Toronto Raptors on July 12, Evbuomwan finished with six points on 2-for-3 shooting from the field, two rebounds and one block. He backed that performance up with nine points on 3-for-6 shooting from the field and 1-for-1 shooting from three along with two rebounds, two assists and two seals on July 14 in a victory over the San Antonio Spurs. In the Pistons final Summer League contest, a 100-85 triumph over the Indiana Pacers on July 16, Evbuomwan had six points, eight rebounds, two assists and one block."
+            },
+            {
+                "game": "Baseball",
+                "news": "For many, many years Rick wrote a Sunday baseball column, and the name of it was Diamond Reflections. TigerBlog is borrowing that today as he writes about three separate baseball-related subjects, two of which relate to Princeton: Do you know how many active Major League Baseball players have at least 2,000 career hits?  The answer is not a lot. Actually, it's six. That's it.The idea that a pitcher will reach 300 wins in these days of pitch counts and limited innings is pretty much out the window. If anything, a relief pitcher has as good a chance of getting to 300 wins as a starter, and maybe even better. But 3,000 hits? Maybe it's because of how many at-bats now end in either home runs or strikeouts, but players don't seem to be piling up the number of hits that they used to."
+            },
+            {
+                "game": " Ice Hockey",
+                "news": "Konovalov, a forward and an economics major who will begin his junior year in the fall, competed in seven games last season and had a helper at Harvard during the second game of the ECAC Hockey quarterfinal series. Marciano, a rising sophomore blueliner, played in 28 games and scored his first career goal in a 6-5 win over RPI last December before getting an assist in the return trip to Troy in February."
+            }
+        ],
         "about": "Princeton University is a private institution that was founded in 1746. It has a total undergraduate enrollment of 5,321 (fall 2021), its setting is suburban, and the campus size is 600 acres. It utilizes a semester-based academic calendar. Princeton University's ranking in the 2022-2023 edition of Best Colleges is National Universities, #1. Its tuition and fees are $57,410.",
         "admission_process": {
-            "SAT Range": "1460 - 1570",
-            "ACT Range":"33-35",
+            "sat": "1460 - 1570",
+            "act": "33 - 35",
             "gpa": "3.9",
             "admission_fee": 57410,
             "room_board": 18630,
-            "link": "https://www.princeton.edu/admission-aid" 
+            "link": "https://www.princeton.edu/admission-aid"
         }
     },
     {
         "name": "",
-        "admissionDate":"",
+        "admissionDate": "",
         "events": "",
         "research": "",
         "img": "",
@@ -52,7 +64,7 @@
     },
     {
         "name": "",
-        "admissionDates":"",
+        "admissionDates": "",
         "events": "",
         "research": "",
         "img": "",
@@ -60,7 +72,7 @@
     },
     {
         "name": "",
-        "admissionDates":"",
+        "admissionDates": "",
         "events": "",
         "research": "",
         "img": "",
@@ -68,7 +80,7 @@
     },
     {
         "name": "",
-        "admissionDates":"",
+        "admissionDates": "",
         "events": "",
         "research": "",
         "img": "",
@@ -76,7 +88,7 @@
     },
     {
         "name": "",
-        "admissionDates":"",
+        "admissionDates": "",
         "events": "",
         "research": "",
         "img": "",
