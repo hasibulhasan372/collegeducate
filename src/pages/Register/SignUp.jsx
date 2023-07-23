@@ -1,11 +1,12 @@
 import { useContext } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../Provider/AuthProvider";
 import { toast } from "react-hot-toast";
 
 
 const SignUp = () => {
-    const { signUp, updateProfileInfo } = useContext(AuthContext);
+    const { signUp, updateProfileInfo, logOut } = useContext(AuthContext);
+    const navigate = useNavigate();
     const handleSignUp = (e) => {
         e.preventDefault();
         const form = e.target;
@@ -15,14 +16,12 @@ const SignUp = () => {
         const photo = form.photo.value;
         const email = form.email.value;
         const password = form.password.value;
-        console.log(email, password, name)
         signUp(email, password)
             .then((result) => {
                 const signUpUser = result.user;
                 updateProfileInfo(name, photo)
                     .then(() => {
                         if (signUpUser.email) {
-                            console.log(result.user, result.user.email, result.user?.displayName, result.user?.photoURL, address, university)
                             const userInfo = {
                                 email: result.user.email,
                                 name: result.user?.displayName,
@@ -41,8 +40,9 @@ const SignUp = () => {
                                 .then(res => res.json())
                                 .then(data => {
                                     if (data.insertedId) {
-                                        toast.success("User information Saved")
-
+                                        toast.success("User information Saved");
+                                        logOut();
+                                        navigate("/login")
                                     }
                                 })
                                 .catch(error => console.log(error.message))

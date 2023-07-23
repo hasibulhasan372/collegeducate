@@ -11,6 +11,8 @@ import CollegeDetails from "../components/Shared/CollegeDetails";
 import AdmissionForm from "../components/Form/AdmissionForm";
 import MyCollege from "../pages/MyCollege/MyCollege";
 import PrivateRouter from "./PrivateRouter";
+import Profile from "../pages/Profile/Profile";
+import UpdateProfile from "../pages/Profile/UpdateProfile";
 
   const router = createBrowserRouter([
     {
@@ -50,6 +52,14 @@ import PrivateRouter from "./PrivateRouter";
         {
           path: "myCollege",
           element: <PrivateRouter><MyCollege></MyCollege></PrivateRouter>
+        },
+        {
+          path: "profile",
+          element: <Profile></Profile>
+        },
+        {
+          path: "update",
+          element: <UpdateProfile></UpdateProfile>
         }
       ]
     },
