@@ -1,7 +1,6 @@
 
 
 const Candidate = ({candidate}) => {
-    // const {name, subject, candidate_mail, birth, phone, image} = candidate
     return (
         <div className="flex flex-col md:flex-row py-10 items-center bg-purple-100">
             <img src={candidate?.image} alt="" className="" />
