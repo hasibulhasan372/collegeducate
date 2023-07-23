@@ -5,7 +5,10 @@ import useColleges from "../../hooks/useColleges";
 import { FaStar } from "react-icons/fa";
 import { imageHosting } from "../../api/savedImage";
 import { toast } from "react-hot-toast";
+import { useContext } from "react";
+import { AuthContext } from "../../Provider/AuthProvider";
 const AdmissionForm = () => {
+    const {user} = useContext(AuthContext)
     const { id } = useParams();
     const [colleges] = useColleges();
     const admissionCollege = colleges?.find(college => college._id === id)
@@ -21,11 +24,12 @@ const AdmissionForm = () => {
                     name,
                     subject,
                     photo,
-                    email,
+                    candidate_mail: email,
                     phone,
                     birth,
                     college: admissionCollege?.name,
-                    image: imgUrl
+                    image: imgUrl,
+                    user_mail: user?.email
                 }
                 fetch("http://localhost:5000/candidateInfo", {
                     method: "POST",

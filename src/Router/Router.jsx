@@ -46,7 +46,7 @@ import UpdateProfile from "../pages/Profile/UpdateProfile";
         },
         {
           path: "admissionForm/:id",
-          element: <AdmissionForm></AdmissionForm>
+          element: <PrivateRouter><AdmissionForm></AdmissionForm></PrivateRouter>
 
         },
         {
