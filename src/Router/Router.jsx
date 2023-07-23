@@ -28,8 +28,7 @@ import PrivateRouter from "./PrivateRouter";
         {
           path: "login",
           element: <Login></Login>
-        }
-        ,
+        },
         {
           path: "signUp",
           element: <SignUp></SignUp>
