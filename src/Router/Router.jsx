@@ -9,6 +9,8 @@ import SignUp from "../pages/Register/SignUp";
 import Admission from "../pages/Admission/Admission";
 import CollegeDetails from "../components/Shared/CollegeDetails";
 import AdmissionForm from "../components/Form/AdmissionForm";
+import MyCollege from "../pages/MyCollege/MyCollege";
+import PrivateRouter from "./PrivateRouter";
 
   const router = createBrowserRouter([
     {
@@ -45,6 +47,10 @@ import AdmissionForm from "../components/Form/AdmissionForm";
           path: "admissionForm/:id",
           element: <AdmissionForm></AdmissionForm>
 
+        },
+        {
+          path: "myCollege",
+          element: <PrivateRouter><MyCollege></MyCollege></PrivateRouter>
         }
       ]
     },

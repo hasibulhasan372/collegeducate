@@ -4,11 +4,12 @@ import { useParams } from "react-router-dom";
 import useColleges from "../../hooks/useColleges";
 import { FaStar } from "react-icons/fa";
 import { imageHosting } from "../../api/savedImage";
+import { toast } from "react-hot-toast";
 const AdmissionForm = () => {
     const { id } = useParams();
     const [colleges] = useColleges();
     const admissionCollege = colleges?.find(college => college._id === id)
-    const { register, handleSubmit } = useForm();
+    const { register, handleSubmit, reset } = useForm();
 
     const onSubmit = data => {
         const image = data.photo[0]
@@ -26,7 +27,6 @@ const AdmissionForm = () => {
                     college: admissionCollege?.name,
                     image: imgUrl
                 }
-                console.log(clientInfo)
                 fetch("http://localhost:5000/candidateInfo", {
                     method: "POST",
                     headers: {
@@ -34,17 +34,18 @@ const AdmissionForm = () => {
                     },
                     body: JSON.stringify(clientInfo)
                 })
+                    .then(res => res.json())
                     .then(data => {
-                        console.log(data)
+                        if (data.insertedId) {
+                           toast.success("Candidate information Saved")
+                            reset()
+                        }
                     })
                     .catch(error => console.log(error.message))
 
             })
-
-
-
-
     };
+
     const starIcon = <FaStar className="text-red-500 text-[8px]"></FaStar>
     return (
         <div className="p-3 md:px-8 md:py-8 lg:px-12 lg:py-12 border rounded-md mt-10 md:mt-20 my-con">
@@ -70,7 +71,7 @@ const AdmissionForm = () => {
                         <label className="label">
                             <span className="label-text flex">Photo{starIcon}</span>
                         </label>
-                        <input type="file" {...register("photo",)} name="photo" placeholder="Please Input photo" className=" outline-none placeholder:border-none" />
+                        <input type="file" {...register("photo", { required: true })} name="photo" placeholder="Please Input photo" className=" outline-none placeholder:border-none" />
                     </div>
                     {/* Instructor Email  */}
                     <div className="form-control">
@@ -91,7 +92,7 @@ const AdmissionForm = () => {
                         <label className="label">
                             <span className="label-text flex">Date of Birth{starIcon}</span>
                         </label>
-                        <input type="date" {...register("birth", { required: true })} name="birth" placeholder="Date of Birth" className="input input-bordered" />
+                        <input type="date" {...register("birth", { required: true })} name="birth" placeholder="Date of Birth" className="input input-bordered md:w-1/3" />
 
                     </div>
 
