@@ -1,9 +1,10 @@
+import TopCollege from "../TopCollege/TopCollege";
 
 
 const Home = () => {
     return (
-        <div>
-            <h1>This is home</h1>
+        <div className="my-con mt-10 ">
+            <TopCollege></TopCollege>
         </div>
     );
 };
