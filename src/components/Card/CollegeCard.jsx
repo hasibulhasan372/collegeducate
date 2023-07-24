@@ -1,10 +1,11 @@
+import { Rating } from "@mui/material";
 import { Link } from "react-router-dom";
 
 
 const CollegeCard = ({college}) => {
-    const {name, admissionDate, events, research, img, sports, rating, about, admission_process, published_paper, _id} = college;
+    const {name, admissionDate, events,  img, sports, rating, published_paper, _id} = college;
     return (
-        <div className=" border border-green-500 rounded-xl pb-8">
+        <div className=" rounded-xl pb-8">
            <img src={img} alt="" className="rounded-xl"/>
             <h2>{name}</h2>
             <h4>Admission Date: {admissionDate}</h4>
@@ -13,7 +14,7 @@ const CollegeCard = ({college}) => {
             <h4>Events: {events.map((event, index) => <p key={index} className="font-semibold pl-2"> {event?.name}.</p> )}</h4>
            <div className="flex items-center justify-between">
            <h4>Research: {published_paper}</h4>
-           <h5>{rating}</h5>
+           <Rating value={rating} precision={0.5} readOnly name="read-only"></Rating>
             
            </div>
            <div className="mt-6">
