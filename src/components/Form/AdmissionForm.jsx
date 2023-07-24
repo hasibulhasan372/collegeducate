@@ -8,7 +8,7 @@ import { toast } from "react-hot-toast";
 import { useContext } from "react";
 import { AuthContext } from "../../Provider/AuthProvider";
 const AdmissionForm = () => {
-    const {user} = useContext(AuthContext)
+    const { user } = useContext(AuthContext)
     const { id } = useParams();
     const [colleges] = useColleges();
     const admissionCollege = colleges?.find(college => college._id === id)
@@ -31,7 +31,7 @@ const AdmissionForm = () => {
                     image: imgUrl,
                     user_mail: user?.email
                 }
-                fetch("http://localhost:5000/candidateInfo", {
+                fetch("https://collegeducate-server.vercel.app/candidateInfo", {
                     method: "POST",
                     headers: {
                         "content-type": "application/json"
@@ -41,7 +41,7 @@ const AdmissionForm = () => {
                     .then(res => res.json())
                     .then(data => {
                         if (data.insertedId) {
-                           toast.success("Candidate information Saved")
+                            toast.success("Candidate information Saved")
                             reset()
                         }
                     })

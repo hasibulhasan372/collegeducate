@@ -1,18 +1,18 @@
 import { useEffect, useState } from "react";
 
 
-const useColleges = () => {
-    const [colleges, setColleges] = useState([]);
+const useReview = () => {
+    const [reviews, setReviews] = useState([]);
     const [loading, setLoading] = useState(true)
     useEffect(() => {
-        fetch("https://collegeducate-server.vercel.app/colleges")
+        fetch("http://localhost:5000/reviews")
             .then(res => res.json())
             .then(data => {
-                setColleges(data);
+                setReviews(data);
                 setLoading(false)
             })
     }, [])
-    return [colleges, loading];
+    return [reviews, loading];
 };
 
-export default useColleges;
+export default useReview;

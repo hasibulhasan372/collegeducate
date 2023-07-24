@@ -30,7 +30,7 @@ const SignUp = () => {
                                 university,
                                 userMail: result.user.email
                             }
-                            fetch("http://localhost:5000/users", {
+                            fetch("https://collegeducate-server.vercel.app/users", {
                                 method: "POST",
                                 headers: {
                                     "content-type": "application/json"

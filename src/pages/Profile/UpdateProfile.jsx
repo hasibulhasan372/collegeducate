@@ -7,11 +7,11 @@ import { useNavigate } from "react-router-dom";
 
 
 const UpdateProfile = () => {
-    const {user} = useContext(AuthContext)
+    const { user } = useContext(AuthContext)
     const [users] = useUsers();
     const myInfo = users?.find(profile => profile?.email === user?.email)
     const navigate = useNavigate();
-   
+
     const handleDollUpdate = e => {
         e.preventDefault();
         const form = e.target;
@@ -21,10 +21,10 @@ const UpdateProfile = () => {
         const university = form.university.value;
 
 
-        const updateProfile = { name, userMail, address, university}
+        const updateProfile = { name, userMail, address, university }
 
 
-        fetch(`http://localhost:5000/users/${myInfo?._id}`, {
+        fetch(`https://collegeducate-server.vercel.app/users/${myInfo?._id}`, {
             method: "PATCH",
             headers: {
                 "content-type": "application/json"
@@ -50,19 +50,19 @@ const UpdateProfile = () => {
 
                     <div>
                         <label className="text-base font-medium block mb-2"> Name</label>
-                        <input type="text" name="name" id="price" className=" border  border-[#4acdd5] py-2 rounded pl-2 w-full"  defaultValue={myInfo?.name}  />
+                        <input type="text" name="name" id="price" className=" border  border-[#4acdd5] py-2 rounded pl-2 w-full" defaultValue={myInfo?.name} />
                     </div>
                     <div>
                         <label className="text-base font-medium block mb-2">Email</label>
-                        <input type="email" name="userMail" id="userMail" className=" border  border-[#4acdd5] py-2 rounded pl-2 w-full"  defaultValue={myInfo?.userMail}  />
+                        <input type="email" name="userMail" id="userMail" className=" border  border-[#4acdd5] py-2 rounded pl-2 w-full" defaultValue={myInfo?.userMail} />
                     </div>
                     <div className="col-span-2">
                         <label className="text-base font-medium block mb-2"> Address</label>
-                        <input type="address" name="address" id="address" className=" border  border-[#4acdd5] py-2 rounded pl-2 w-full"  defaultValue={myInfo?.address} />
+                        <input type="address" name="address" id="address" className=" border  border-[#4acdd5] py-2 rounded pl-2 w-full" defaultValue={myInfo?.address} />
                     </div>
                     <div className="col-span-2">
                         <label className="text-base font-medium block mb-2"> University</label>
-                        <input type="university" name="university" id="university" className=" border  border-[#4acdd5] py-2 rounded pl-2 w-full"  defaultValue={myInfo?.university}   />
+                        <input type="university" name="university" id="university" className=" border  border-[#4acdd5] py-2 rounded pl-2 w-full" defaultValue={myInfo?.university} />
                     </div>
 
 
