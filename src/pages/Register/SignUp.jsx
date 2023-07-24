@@ -1,15 +1,18 @@
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../Provider/AuthProvider";
 import { toast } from "react-hot-toast";
 import GoogleSignIn from "./GoogleSignIn";
+import { FaStar } from "react-icons/fa";
 
 
 const SignUp = () => {
     const { signUp, updateProfileInfo, logOut } = useContext(AuthContext);
     const navigate = useNavigate();
+    const [error, setError] = useState("")
     const handleSignUp = (e) => {
         e.preventDefault();
+        setError("")
         const form = e.target;
         const name = form.name.value;
         const address = form.address.value;
@@ -53,9 +56,11 @@ const SignUp = () => {
 
             })
             .catch(error => {
-                console.log(error)
+                setError(error.message)
             });
     };
+    const starIcon = <FaStar className="text-red-500 text-[8px]"></FaStar>
+
     return (
         <div className="my-con ">
             <div className="hero min-h-screen bg-base-200">
@@ -70,37 +75,37 @@ const SignUp = () => {
                            <div >
                            <div className="form-control">
                                 <label className="label">
-                                    <span className="label-text">Your Name</span>
+                                    <span className="label-text flex">Your Name{starIcon}</span>
                                 </label>
                                 <input type="text" name="name" placeholder="name" className="input input-bordered" />
                             </div>
                             <div className="form-control">
                                 <label className="label">
-                                    <span className="label-text">University</span>
+                                    <span className="label-text flex">University{starIcon}</span>
                                 </label>
                                 <input type="text" name="university" placeholder="Current Institute" className="input input-bordered" />
                             </div>
                             <div className="form-control">
                                 <label className="label">
-                                    <span className="label-text">Address</span>
+                                    <span className="label-text flex">Address{starIcon}</span>
                                 </label>
                                 <input type="text" name="address" placeholder="Your Address" className="input input-bordered" />
                             </div>
                             <div className="form-control">
                                 <label className="label">
-                                    <span className="label-text">Your Photo</span>
+                                    <span className="label-text flex">Your Photo{starIcon}</span>
                                 </label>
                                 <input type="url" name="photo" placeholder="Photo URL" className="input input-bordered" />
                             </div>
                             <div className="form-control">
                                 <label className="label">
-                                    <span className="label-text">Email</span>
+                                    <span className="label-text flex">Email{starIcon}</span>
                                 </label>
                                 <input type="email" name="email" placeholder="email" className="input input-bordered" />
                             </div>
                             <div className="form-control">
                                 <label className="label">
-                                    <span className="label-text">Password</span>
+                                    <span className="label-text flex">Password{starIcon}</span>
                                 </label>
                                 <input type="password" name="password" placeholder="password" className="input input-bordered" />
 
@@ -109,6 +114,7 @@ const SignUp = () => {
                             <div className="form-control mt-6">
                                 <button className="btn btn-primary" type="submit">SignUp</button>
                             </div>
+                            <p className='text-red-900 mt-2 underline underline-offset-4 pb-1'>{error}</p>
                             <GoogleSignIn></GoogleSignIn>
                         </form>
                         <div className="mb-5 pl-10 ">

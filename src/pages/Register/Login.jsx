@@ -1,4 +1,4 @@
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../Provider/AuthProvider";
 import GoogleSignIn from "./GoogleSignIn";
@@ -8,23 +8,29 @@ const Login = () => {
     const { logIn } = useContext(AuthContext);
     const navigate = useNavigate();
     const location = useLocation();
+    const [error, setError] = useState("")
     let from = location.state?.from?.pathname || "/";
     const handleLogin = (e) => {
         e.preventDefault();
+        setError('')
         const form = e.target;
         const email = form.email.value;
         const password = form.password.value;
+       
         logIn(email, password)
             .then(result => {
                 const loggedUser = result.user;
                 if (loggedUser?.email) {
+                    form.reset("")
                     navigate(from, { replace: true });
                 }
             })
             .catch(error => {
-                console.log(error)
+                setError(error.message)
             });
     };
+
+    
 
     return (
         <div className="my-con">
@@ -53,6 +59,8 @@ const Login = () => {
                                 <div className="form-control mt-6">
                                     <button className="btn btn-primary" type="submit">Login</button>
                                 </div>
+                                
+                                <p className='text-red-900 mt-2 underline underline-offset-4 pb-1'>{error}</p>
                             </form>
                             <GoogleSignIn></GoogleSignIn>
                         </div>
