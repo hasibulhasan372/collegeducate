@@ -7,9 +7,9 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 
 const Reviews = () => {
     const [reviews] = useReview();
-    console.log(reviews)
     return (
-        <div className="my-con lg:my-20 bg-green-600 rounded-md py-5 md:py-10">
+        <div className="my-con  rounded-md py-5 md:py-10">
+            <h2 className="py-10 text-center text-3xl font-bold text-slate-900">Reviews</h2>
 
             <Swiper navigation={true} modules={[Navigation]} className="mySwiper">
                 

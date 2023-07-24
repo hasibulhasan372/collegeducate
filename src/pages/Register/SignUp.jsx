@@ -56,17 +56,18 @@ const SignUp = () => {
             });
     };
     return (
-        <div className="my-con">
+        <div className="my-con ">
             <div className="hero min-h-screen bg-base-200">
-                <div className="hero-content flex-col lg:flex-row-reverse">
+                <div className="hero-content flex-col lg:flex-row-reverse ">
                     <div className="text-center lg:text-left">
-                        <img src="https://i.ibb.co/sJpvRY2/login.png" alt="admission" className="hidden md:block" />
+                        <img src="https://i.ibb.co/sJpvRY2/login.png" alt="admission" className="hidden lg:block" />
                     </div>
-                    <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
+                    <div className="card flex-shrink-0 w-full  max-w-sm  shadow-2xl bg-base-100">
 
-                        <form onSubmit={handleSignUp} className="card-body">
+                        <form onSubmit={handleSignUp} className="card-body ">
                             <h1 className="text-5xl font-bold">Sign Up</h1>
-                            <div className="form-control">
+                           <div >
+                           <div className="form-control">
                                 <label className="label">
                                     <span className="label-text">Your Name</span>
                                 </label>
@@ -103,6 +104,7 @@ const SignUp = () => {
                                 <input type="password" name="password" placeholder="password" className="input input-bordered" />
 
                             </div>
+                           </div>
                             <div className="form-control mt-6">
                                 <button className="btn btn-primary" type="submit">SignUp</button>
                             </div>

@@ -30,8 +30,7 @@ const Login = () => {
             <div className="hero min-h-screen bg-base-200">
                 <div className="hero-content flex-col lg:flex-row-reverse items-center">
                     <div className="text-center ">
-                        
-                        <img src="https://i.ibb.co/sJpvRY2/login.png" alt="admission" className="hidden md:block" />
+                        <img src="https://i.ibb.co/sJpvRY2/login.png" alt="admission" className="hidden lg:block" />
                     </div>
                     <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
                         <div className="card-body">

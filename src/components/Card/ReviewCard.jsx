@@ -4,7 +4,7 @@ import { Rating } from "@mui/material";
 const ReviewCard = ({review}) => {
     const {rating, comment, commenter, photo} = review;
     return (
-        <div className=" flex flex-col items-center justify-center px-3 md:px-20 space-y-2 mx-auto text-white">
+        <div className=" flex flex-col items-center justify-center px-10 md:px-20 space-y-2 mx-auto text-slate-800">
             <h2>
                 <Rating value={rating} precision={0.5} readOnly name="read-only"></Rating>
             </h2>
