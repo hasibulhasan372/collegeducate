@@ -9,23 +9,24 @@ import { Link } from "react-router-dom";
 
 
 const MyCollege = () => {
-    const [candidates] = useCandidate();
+    const [candidate] = useCandidate();
+    console.log(candidate)
     const { user } = useContext(AuthContext);
-    const candidate = candidates?.find(student => student.user_mail === user?.email);
+    const myCandidate = candidate?.find(student => student.user_mail === user?.email);
     const [colleges] = useColleges();
-    const collegesInfo = colleges?.filter(college => college.name === candidate?.college);
+    const collegesInfo = colleges?.filter(college => college.name === myCandidate?.college);
 
 
     const handleReview = (e) => {
         e.preventDefault()
         const comment = e.target.message.value;
         const rating = e.target.rating.value;
-        console.log(comment, rating, candidate?.name)
+        console.log(comment, rating, myCandidate?.name)
         const review = {
             comment,
             rating: parseFloat(rating),
-            commenter: candidate?.name,
-            photo: candidate?.image
+            commenter: myCandidate?.name,
+            photo: myCandidate?.image
         };
         fetch("https://collegeducate-server.vercel.app/reviews", {
             method: "POST",
@@ -49,9 +50,9 @@ const MyCollege = () => {
     return (
         <div className="my-con lg:px-10 my-10 md:my-20">
             {
-                candidate ? <><div>
+                myCandidate ? <><div>
 
-                    <Candidate Candidate candidate={candidate} ></Candidate >
+                    <Candidate Candidate candidate={myCandidate} ></Candidate >
                     <div className="md:px-20 sm:px-20">
                         {
                             collegesInfo.map(college => <TopCollegeCard key={college._id} college={college}></TopCollegeCard>)

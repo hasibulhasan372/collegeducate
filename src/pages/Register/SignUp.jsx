@@ -2,6 +2,7 @@ import { useContext } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../Provider/AuthProvider";
 import { toast } from "react-hot-toast";
+import GoogleSignIn from "./GoogleSignIn";
 
 
 const SignUp = () => {
@@ -108,7 +109,7 @@ const SignUp = () => {
                             <div className="form-control mt-6">
                                 <button className="btn btn-primary" type="submit">SignUp</button>
                             </div>
-
+                            <GoogleSignIn></GoogleSignIn>
                         </form>
                         <div className="mb-5 pl-10 ">
                             <p>Already have an account? <Link to="/logIn" className="text-green-500 underline">Login</Link></p>
