@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 
 const TopCollegeCard = ({ college }) => {
-    const { name, admissionDate, events, research, img, sports, rating, about, admission_process, published_paper, _id } = college;
+    const { name, admissionDate, events, img, sports, rating, published_paper, _id } = college;
     return (
         <div className="border mt-10 p-4 rounded-md border-slate-500 h-[420px]">
             <div className=" flex flex-col-reverse lg:grid lg:grid-cols-3 ">
@@ -19,6 +19,7 @@ const TopCollegeCard = ({ college }) => {
                 <div className="lg:h-full">
                     <img src={img} alt="college" className="lg:h-full object-cover rounded-md" />
                 </div>
+                
                 
             </div>
         </div>
